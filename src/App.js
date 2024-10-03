@@ -8,6 +8,7 @@ import BikePersonDetails from "./pages/bikepersondetails";
 import GuardAttendance from "./pages/guardattendence";
 import WeeklyReport from "./pages/weeklyreport";
 import   AMCReport from "./pages/amc";
+import GuardEntryDetails from "./pages/guardentrydetails";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
              <Route path="/guard-attendance" element={<GuardAttendance/>} />
              <Route path="/weekly-reports" element={<WeeklyReport/>} />
              <Route path="/amc-report" element={<AMCReport/>} />
+             <Route path="/guard-entry-details" element={<GuardEntryDetails/>} />
            
             </Routes>
             </div>
