@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 const SupervisorReview = () => {
   return (
-    <div className=''>
+    <div className='pb-24'>
       {/* Upper Heading with Button */}
       <div className="flex flex-row items-center justify-between">
         <h1 className="flex items-center align-middle text-sm sm:text-xl font-semibold text-black">
@@ -13,7 +13,7 @@ const SupervisorReview = () => {
         </h1>
       </div>
       <form >
-        <div className="grid grid-cols-2 gap-5 pt-8 pb-12">
+        <div className="grid grid-cols-2 gap-5 pt-8">
           <div className="">
           <label for="name" className="block mb-2 text-sm font-medium text-gray-900">Person Required</label>
              <div className='flex items-center'>
@@ -29,8 +29,7 @@ const SupervisorReview = () => {
              </div>
           </div>
         </div>
-        <div className=' flex float-end text-right mt-4'>
-
+        <div className=' flex float-end text-right pt-12'>
           <button
             type="submit"
             className="text-[#7162A7] bg-[#FFFFFF] border border-[#7162A7] hover:bg-[#7162A7] hover:text-[#FFFFFF] hover:border-[#7162A7] transition-all duration-300 ease-in-out focus:ring-4 focus:ring-[#7162A7] font-medium rounded-lg text-sm px-5 py-2.5"
@@ -43,9 +42,6 @@ const SupervisorReview = () => {
           >
             Next
           </button>
-
-
-
         </div>
       </form>
 

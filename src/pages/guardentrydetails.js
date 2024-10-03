@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 const GuardEntryDetails = () => {
   return (
-    <div className=''>
+    <div className='pb-20'>
       {/* Upper Heading with Button */}
       <div className="flex flex-row items-center justify-between">
         <h1 className="flex items-center align-middle text-sm sm:text-xl font-semibold text-black">
@@ -125,7 +125,7 @@ const GuardEntryDetails = () => {
             </div>
           </div>
         </div>
-        <div className=' flex float-end text-right mt-4'>
+        <div className=' flex float-end text-right mt-8'>
 
           <button
             type="submit"

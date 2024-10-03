@@ -259,8 +259,8 @@ const GuardAttendance = () => {
   }, []);
 
   return (
-    <div className="bg-[#F5F7FF] shadow-md rounded-2xl">
-      <div className="p-6">
+    <div className="hadow-md rounded-2xl">
+      <div className="">
         {/* Upper Heading with Button */}
         <div className="flex flex-row items-center justify-between">
           <h1 className="flex items-center align-middle text-sm sm:text-xl font-semibold text-black">
@@ -315,7 +315,7 @@ const GuardAttendance = () => {
         </div>
 
         {/* Attendance Layout */}
-        <div className="bg-[#F5F7FF] rounded-2xl pt-4">
+        <div className="rounded-2xl pt-4">
           <div>
             {/* Profiles List */}
             <div className="flex flex-wrap gap-6">

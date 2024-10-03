@@ -3,7 +3,7 @@ import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 const BikePersonDetails = () => {
   return (
-    <div className=" ">
+    <div className=" pb-20">
       {/* Upper Heading with Button */}
       <div className="flex flex-row items-center justify-between">
         <h1 className="flex items-center align-middle text-sm sm:text-xl font-semibold text-black">
@@ -188,7 +188,7 @@ const BikePersonDetails = () => {
             </div>
           </div>
         </div>
-        <div className=" flex float-end text-right mt-4">
+        <div className=" flex float-end text-right mt-8">
           <button
             type="submit"
             className="text-[#7162A7] bg-[#FFFFFF] border border-[#7162A7] hover:bg-[#7162A7] hover:text-[#FFFFFF] hover:border-[#7162A7] transition-all duration-300 ease-in-out focus:ring-4 focus:ring-[#7162A7] font-medium rounded-lg text-sm px-5 py-2.5"

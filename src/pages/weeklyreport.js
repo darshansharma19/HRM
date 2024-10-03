@@ -117,8 +117,8 @@ const WeeklyReport = () => {
 
   // Main component rendering the table and layout
   return (
-    <div className="bg-[#F5F7FF] shadow-md rounded-2xl">
-      <div className="p-6">
+    <div className=" rounded-2xl">
+      <div className="">
         {/* Upper Heading with Button */}
         <div className="flex flex-row items-center justify-between">
           <h1 className="flex items-center text-sm sm:text-xl font-semibold text-black">
@@ -128,7 +128,7 @@ const WeeklyReport = () => {
         </div>
 
         {/* Search Layout */}
-        <div className="bg-[#F5F7FF] rounded-2xl pt-4">
+        <div className="rounded-2xl pt-4">
           <div className="py-4">
             <form className="flex items-center" onSubmit={(e) => e.preventDefault()}>
               <label htmlFor="voice-search" className="sr-only">Search</label>
