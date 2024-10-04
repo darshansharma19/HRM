@@ -46,17 +46,17 @@ const Sidebar = () => {
         } shadow-lg`}
     >
       {/* Logo Section */}
-      <div className="flex items-center justify-center h-20 bg-blue-100">
-        <span className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+      <div className="flex items-center justify-center h-20 bg-white py-2">
+        <span className="cursor-pointer h-[100%]" onClick={() => setIsOpen(!isOpen)}>
           <img
             src="/findriya-logo.png"
             alt="Logo"
-            className={`h-12 w-auto ${isOpen ? "block" : "hidden"} md:block`}
+            className={`h-full w-auto ${isOpen ? "block" : "hidden"} md:block`}
           />
           <img
             src="/nexinfotech.png"
             alt="Small Logo"
-            className={`h-8 w-auto ${isOpen ? "hidden" : "block"} md:hidden`}
+            className={`h-full w-auto ${isOpen ? "hidden" : "block"} md:hidden`}
           />
         </span>
       </div>
