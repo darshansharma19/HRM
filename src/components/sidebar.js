@@ -15,7 +15,19 @@ import {
   FaExclamationCircle,
   FaPeopleCarry,
   FaToolbox,
+  FaUserAlt,
+  FaUserClock,
+  FaUmbrellaBeach,
+  FaSignInAlt,
+  FaCalendarAlt,
+  FaExchangeAlt,
+  FaTruck,
+  FaIdBadge,
+  FaThList,
 } from "react-icons/fa";
+
+import '../App.css'
+
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true); // To toggle sidebar collapse
@@ -30,9 +42,8 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`flex flex-col h-screen bg-white transition-width duration-300 ${
-        isOpen ? "w-64" : "w-20"
-      } shadow-lg`}
+      className={`flex flex-col h-screen bg-[#7162A7] text-gray-300 transition-width duration-300 ${isOpen ? "w-64" : "w-20"
+        } shadow-lg`}
     >
       {/* Logo Section */}
       <div className="flex items-center justify-center h-20 bg-blue-100">
@@ -51,13 +62,13 @@ const Sidebar = () => {
       </div>
 
       {/* Menu Items */}
-      <nav className="flex-1 overflow-y-auto">
+      <nav className="flex-1 overflow-y-auto sideBarScrollBar">
         <ul className="px-2 py-4">
           {/* Dashboard */}
           <li className="mb-4">
             <Link
               to="/dashboard"
-              className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+              className="flex items-center p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
             >
               <FaTachometerAlt className="text-xl" />
               <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>
@@ -70,7 +81,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <div
               onClick={() => toggleMenu("attendance")}
-              className="flex items-center justify-between p-2 text-blue-600 hover:bg-blue-100 rounded-md cursor-pointer transition-all"
+              className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all"
             >
               <div className="flex items-center">
                 <FaClipboardList className="text-xl" />
@@ -90,52 +101,69 @@ const Sidebar = () => {
             </div>
 
             <ul
-              className={`${
-                openMenu === "attendance" ? "block" : "hidden"
-              } pl-8 mt-2`}
+              className={`${openMenu === "attendance" ? "block" : "hidden"
+                } pl-8 mt-2`}
             >
-              <li>
-                <Link to="/employee-enquiry" className="text-blue-600 hover:text-blue-800">
+              {/* Employee Enquiry */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/employee-enquiry" className="flex items-center">
+                  <FaUserAlt className="text-lg mr-2" />
                   Employee Enquiry
                 </Link>
               </li>
-              <li>
-                <Link to="/working-employee" className="text-blue-600 hover:text-blue-800">
+              {/* Working Employee */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/working-employee" className="flex items-center">
+                  <FaUserClock className="text-lg mr-2" />
                   Working Employee
                 </Link>
               </li>
-              <li>
-                <Link to="/holidays" className="text-blue-600 hover:text-blue-800">
+              {/* Holidays */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/holidays" className="flex items-center">
+                  <FaUmbrellaBeach className="text-lg mr-2" />
                   Holidays
                 </Link>
               </li>
-              <li>
-                <Link to="/resign" className="text-blue-600 hover:text-blue-800">
+              {/* Resign */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/resign" className="flex items-center">
+                  <FaSignInAlt className="text-lg mr-2" />
                   Resign
                 </Link>
               </li>
-              <li>
-                <Link to="/rejoin" className="text-blue-600 hover:text-blue-800">
+              {/* Rejoin */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/rejoin" className="flex items-center">
+                  <FaCalendarAlt className="text-lg mr-2" />
                   Rejoin
                 </Link>
               </li>
-              <li>
-                <Link to="/leave" className="text-blue-600 hover:text-blue-800">
+              {/* Leave */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/leave" className="flex items-center">
+                  <FaUmbrellaBeach className="text-lg mr-2" />
                   Leave
                 </Link>
               </li>
-              <li>
-                <Link to="/transfer" className="text-blue-600 hover:text-blue-800">
+              {/* Transfer */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/transfer" className="flex items-center">
+                  <FaExchangeAlt className="text-lg mr-2" />
                   Transfer
                 </Link>
               </li>
-              <li>
-                <Link to="/chalan" className="text-blue-600 hover:text-blue-800">
+              {/* Chalan */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/chalan" className="flex items-center">
+                  <FaTruck className="text-lg mr-2" />
                   Chalan
                 </Link>
               </li>
-              <li>
-                <Link to="/permission" className="text-blue-600 hover:text-blue-800">
+              {/* Permission */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/permission" className="flex items-center">
+                  <FaIdBadge className="text-lg mr-2" />
                   Permission
                 </Link>
               </li>
@@ -146,7 +174,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <div
               onClick={() => toggleMenu("monthlyReport")}
-              className="flex items-center justify-between p-2 text-blue-600 hover:bg-blue-100 rounded-md cursor-pointer transition-all"
+              className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all"
             >
               <div className="flex items-center">
                 <FaFileAlt className="text-xl" />
@@ -166,17 +194,20 @@ const Sidebar = () => {
             </div>
 
             <ul
-              className={`${
-                openMenu === "monthlyReport" ? "block" : "hidden"
-              } pl-8 mt-2`}
+              className={`${openMenu === "monthlyReport" ? "block" : "hidden"
+                } pl-8 mt-2`}
             >
-              <li>
-                <Link to="/employee-details" className="text-blue-600 hover:text-blue-800">
+              {/* Employee Details */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/employee-details" className="flex items-center">
+                  <FaIdBadge className="text-lg mr-2" />
                   Employee Details
                 </Link>
               </li>
-              <li>
-                <Link to="/main-sheet" className="text-blue-600 hover:text-blue-800">
+              {/* Main Sheet */}
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/main-sheet" className="flex items-center">
+                  <FaThList className="text-lg mr-2" />
                   Main Sheet
                 </Link>
               </li>
@@ -187,7 +218,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <Link
               to="/guard-enquires"
-              className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+              className="flex items-center p-2  hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
             >
               <FaUserShield className="text-xl" />
               <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>
@@ -198,7 +229,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <Link
               to="/supervisor-review"
-              className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+              className="flex items-center p-2  hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
             >
               <FaUsers className="text-xl" />
               <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>
@@ -209,7 +240,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <Link
               to="/guard-entry-details"
-              className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+              className="flex items-center p-2  hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
             >
               <FaUserTie className="text-xl" />
               <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>
@@ -220,7 +251,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <Link
               to="/guard-attendance"
-              className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+              className="flex items-center p-2  hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
             >
               <FaUserCheck className="text-xl" />
               <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>
@@ -231,7 +262,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <Link
               to="/weekly-reports"
-              className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+              className="flex items-center p-2  hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
             >
               <FaChartLine className="text-xl" />
               <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>
@@ -242,7 +273,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <Link
               to="/complaints"
-              className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+              className="flex items-center p-2  hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
             >
               <FaExclamationCircle className="text-xl" />
               <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>
@@ -253,7 +284,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <Link
               to="/bike-person-details"
-              className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+              className="flex items-center p-2  hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
             >
               <FaPeopleCarry className="text-xl" />
               <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>
@@ -264,7 +295,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <Link
               to="/amc-report"
-              className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+              className="flex items-center p-2  hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
             >
               <FaToolbox className="text-xl" />
               <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>
@@ -279,7 +310,7 @@ const Sidebar = () => {
       <div className="p-4">
         <Link
           to="/logout"
-          className="flex items-center p-2 text-blue-600 hover:bg-blue-100 rounded-md transition-all"
+          className="flex items-center p-2  hover:bg-[#3CC3BD] hover:text-white rounded-md transition-all"
         >
           <FaSignOutAlt className="text-xl" />
           <span className={`ml-4 ${isOpen ? "block" : "hidden"}`}>Logout</span>

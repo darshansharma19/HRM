@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Custom Scrollbar Styles in Sider Nav Bar */
+.sideBarScrollBar::-webkit-scrollbar {
+  width: 0px; /* Set the width of the vertical scrollbar */
+  height: 4px !important; /* Set the height of the horizontal scrollbar */
+}
+
+.sideBarScrollBar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the track */
+}
+
+.sideBarScrollBar::-webkit-scrollbar-thumb {
+  background: #161517; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.sideBarScrollBar::-webkit-scrollbar-thumb:hover {
+  background: white; /* Color when hovering over the scrollbar thumb */
+}
+
