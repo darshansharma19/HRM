@@ -539,8 +539,8 @@ const EmployeeChalanList = () => {
                 {/* Modal for Adding New Employee */}
                 {isModalOpen && (
                     <div className="fixed inset-0 flex items-center justify-center z-50">
-                        <div className="bg-white rounded-lg shadow-lg p-6">
-                            <h2 className="text-xl font-bold mb-4 ">Add Employee Chalan List</h2>
+                        <div className="bg-[#7162a7] text-white rounded-lg shadow-lg p-6">
+                            <h2 className="text-xl font-bold mb-4 ">Add Employee Chalan</h2>
                             <form onSubmit={handleSubmit}>
                                 <div className="mb-2">
                                     <label className="block text-sm font-semibold mb-1" htmlFor="firstName">Name</label>
@@ -551,7 +551,7 @@ const EmployeeChalanList = () => {
                                         value={newEmployee.firstName}
                                         onChange={handleInputChange}
                                         required
-                                        className="border rounded px-4 py-2 w-full outline-none"
+                                        className="border rounded px-4 py-2 w-full outline-none text-gray-950"
                                     />
                                 </div>
                                 <div className="mb-2">
@@ -563,7 +563,7 @@ const EmployeeChalanList = () => {
                                         value={newEmployee.slipNo}
                                         onChange={handleInputChange}
                                         required
-                                        className="border rounded px-4 py-2 w-full outline-none"
+                                        className="border rounded px-4 py-2 w-full outline-none text-gray-950"
                                     />
                                 </div>
                                 <div className="mb-2">
@@ -575,7 +575,7 @@ const EmployeeChalanList = () => {
                                         value={newEmployee.employeeId}
                                         onChange={handleInputChange}
                                         required
-                                        className="border rounded px-4 py-2 w-full outline-none"
+                                        className="border rounded px-4 py-2 w-full outline-none text-gray-950"
                                     />
                                 </div>
                                 <div className="mb-2">
@@ -587,7 +587,7 @@ const EmployeeChalanList = () => {
                                         value={newEmployee.mobile}
                                         onChange={handleInputChange}
                                         required
-                                        className="border rounded px-4 py-2 w-full outline-none"
+                                        className="border rounded px-4 py-2 w-full outline-none text-gray-950"
                                     />
                                 </div>
                                 <div className="mb-2">
@@ -599,7 +599,7 @@ const EmployeeChalanList = () => {
                                         value={newEmployee.date}
                                         onChange={handleInputChange}
                                         required
-                                        className="border rounded px-4 py-2 w-full outline-none"
+                                        className="border rounded px-4 py-2 w-full outline-none text-gray-950"
                                     />
                                 </div>
                                 <div className='grid grid-cols-2 gap-2 mb-2'>
@@ -611,7 +611,7 @@ const EmployeeChalanList = () => {
                                             value={newEmployee.gender}
                                             onChange={handleInputChange}
                                             required
-                                            className="border rounded px-4 py-2 w-full outline-none"
+                                            className="border rounded px-4 py-2 w-full outline-none text-gray-950"
                                         >
                                             <option value="">Select Gender</option>
                                             <option value="male">Male</option>
@@ -627,7 +627,7 @@ const EmployeeChalanList = () => {
                                             value={newEmployee.dob}
                                             onChange={handleInputChange}
                                             required
-                                            className="border rounded px-4 py-2 w-full outline-none"
+                                            className="border rounded px-4 py-2 w-full outline-none text-gray-950"
                                         />
                                     </div>
                                 </div>
@@ -640,7 +640,7 @@ const EmployeeChalanList = () => {
                                         value={newEmployee.email}
                                         onChange={handleInputChange}
                                         required
-                                        className="border rounded px-4 py-2 w-full outline-none"
+                                        className="border rounded px-4 py-2 w-full outline-none text-gray-950"
                                     />
                                 </div>
                                 <div className='grid grid-cols-2 gap-2 pt-2 w-full'>
@@ -648,7 +648,7 @@ const EmployeeChalanList = () => {
                                         <button
                                             type="button"
                                             onClick={toggleModal}
-                                            className="bg-white border border-[#7162A7] transition text-black hover:text-white py-2 px-4 rounded hover:bg-[#7162A7]"
+                                            className="bg-white font-semibold text-[#7162A7] hover:text-white border-2 py-2 px-4 rounded hover:bg-[#6150A7]"
                                         >
                                             Cancel
                                         </button>
@@ -656,7 +656,7 @@ const EmployeeChalanList = () => {
                                     <div className="text-right">
                                         <button
                                             type="submit"
-                                            className="bg-[#7162A7] text-white py-2 px-4 rounded hover:bg-[#6150A7]"
+                                            className="bg-white font-semibold text-[#7162A7] hover:text-white border-2 py-2 px-4 rounded hover:bg-[#6150A7]"
                                         >
                                             Add
                                         </button>

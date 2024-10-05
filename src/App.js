@@ -25,13 +25,13 @@ import EmployeeResignList from "./pages/employeeresignlist";
 function App() {
   return (
     <Router>
-      <div className="flex h-screen">
+      <div className="flex">
         <Sidebar />
 
         <div className="flex flex-col flex-1">
           <Header />
 
-          <div className="flex-1 p-6 bg-gray-100">
+          <div className="flex-1 p-6 bg-gray-300">
             <div className="p-6 bg-white rounded-xl">
               <Routes>
                 <Route path="/dashboard" element={<Dashboard />} />

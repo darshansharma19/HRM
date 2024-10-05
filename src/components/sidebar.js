@@ -42,7 +42,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`flex flex-col h-screen bg-[#7162A7] text-gray-300 transition-width duration-300 ${isOpen ? "w-64" : "w-20"
+      className={`flex flex-col bg-[#7162A7] text-gray-300 transition-width duration-300 ${isOpen ? "w-64" : "w-20"
         } shadow-lg`}
     >
       {/* Logo Section */}
