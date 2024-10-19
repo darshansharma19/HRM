@@ -111,6 +111,12 @@ const Sidebar = () => {
                   Employee Enquiry
                 </Link>
               </li>
+              <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
+                <Link to="/inquiry" className="flex items-center">
+                  <FaUserAlt className="text-lg mr-2" />
+                 Inquiry
+                </Link>
+              </li>
               {/* Working Employee */}
               <li className="flex items-center justify-between p-2 hover:bg-[#3CC3BD] hover:text-white rounded-md cursor-pointer transition-all">
                 <Link to="/working-employee" className="flex items-center">

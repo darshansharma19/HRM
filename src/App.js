@@ -24,6 +24,7 @@ import EmployeeTransferList from "./pages/employeetransferlist";
 import EmployeeLeaveList from "./pages/employeeleavelist";
 import EmployeeRejoinList from "./pages/employeerejoinlist";
 import EmployeeResignList from "./pages/employeeresignlist";
+import InquiryPage from "./pages/InquiryPage";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -63,7 +64,7 @@ function App() {
           } 
         />
         <Route 
-          path="/supervisor-review" 
+          path="/dashboard" 
           element={
             <ProtectedRoute>
               <div className="flex">
@@ -72,7 +73,25 @@ function App() {
                   <Header />
                   <div className="flex-1 p-6 bg-gray-300">
                     <div className="p-6 bg-white rounded-xl">
-                      <SupervisorReview />
+                      <Dashboard />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/inquiry" 
+          element={
+            <ProtectedRoute>
+              <div className="flex">
+                <Sidebar />
+                <div className="flex flex-col flex-1">
+                  <Header />
+                  <div className="flex-1 p-6 bg-gray-300">
+                    <div className="p-6 bg-white rounded-xl">
+                      <InquiryPage />
                     </div>
                   </div>
                 </div>
