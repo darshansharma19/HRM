@@ -49,9 +49,9 @@ const GuardAttendance = () => {
 
   useEffect(() => {
     const dummyData = [
-      { id: 1, name: "Darshan Sharma", job: "Ethical Hacker", image: "image-url", label: "Day" },
-      { id: 2, name: "Aditya Bhai", job: "Software Engineer", image: "image-url", label: "Week" },
-      { id: 3, name: "Daksh Sir", job: "UX Designer", image: "image-url", label: "Month" },
+      { id: 1, name: "Darshan Sharma", job: "Ethical Hacker", image: "https://img.freepik.com/premium-photo/young-businessman-isolated-white_53419-207.jpg", label: "Day" },
+      { id: 2, name: "Aditya Bhai", job: "Software Engineer", image: "https://tse1.mm.bing.net/th?id=OIP.8hvRlwDsWXU65DezzDLnsAHaE8&pid=Api&P=0&h=180", label: "Week" },
+      { id: 3, name: "Daksh Sir", job: "UX Designer", image: "https://tse4.mm.bing.net/th?id=OIP.KH28LdqvEHYYXcMD_DOLCwHaHi&pid=Api&P=0&h=180", label: "Month" },
     ];
     setProfiles(dummyData);
   }, []);
